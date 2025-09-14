@@ -4,7 +4,9 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from dotenv import load_dotenv
 from utils import encode_series_name, decode_series_name
-
+import files
+import episodes
+import database
 load_dotenv()
 
 API_ID = int(os.getenv("API_ID"))

@@ -1,4 +1,5 @@
 import base64
+from main import app, ADMINS, SPONSOR_CHANNEL
 
 def encode_series_name(series_name):
     encoded = base64.urlsafe_b64encode(series_name.encode()).decode()

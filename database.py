@@ -1,4 +1,5 @@
 import sqlite3
+from main import app, ADMINS, SPONSOR_CHANNEL
 
 conn = sqlite3.connect("files.db", check_same_thread=False)
 cursor = conn.cursor()

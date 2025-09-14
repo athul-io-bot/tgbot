@@ -3,6 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from main import app
 from utils import decode_series_name
 from database import cursor
+from main import app, ADMINS, SPONSOR_CHANNEL
 
 # List episodes with pagination
 @app.on_callback_query(filters.regex(r"list_series_(.+)_(\d+)"))
